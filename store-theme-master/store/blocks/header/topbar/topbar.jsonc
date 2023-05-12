@@ -13,25 +13,25 @@
   "rich-text#first-purchase-discount":{
     "props":{
       "blockClass": ["text__topbar","firstPurchase__topbar"],
-      "text": "![gift](assets/imgs/svg/icon-gift.svg) Ganhe + 10% off na sua primeira compra"
+      "text": "![gift](assets/imgs/svg/header/topbar/icon-gift.svg) Ganhe + 10% off na sua primeira compra"
     }
   },
   "rich-text#card-purchase-installment":{
     "props":{
       "blockClass": ["text__topbar","cardPurchase__topbar"],
-      "text": "![cards](assets/imgs/svg/icon-cards.svg) Compre em 3x sem juros"
+      "text": "![cards](assets/imgs/svg/header/topbar/icon-cards.svg) Compre em 3x sem juros"
     }
   },
   "rich-text#pix-payment-discount":{
     "props":{
       "blockClass": ["text__topbar","pixPayment__topbar"],
-      "text": "![discount seal](assets/imgs/svg/icon-discount.svg) 7% Off para pagamentos no PIX"
+      "text": "![discount seal](assets/imgs/svg/header/topbar/icon-discount.svg) 7% Off para pagamentos no PIX"
     }
   },
   "rich-text#free-shipping-above-300":{
     "props":{
       "blockClass": ["text__topbar","freeShipping__topbar"],
-      "text": "![shipping](assets/imgs/svg/icon-shipping.svg) Frete grátis para São Paulo acima de R$ 300,00"
+      "text": "![shipping](assets/imgs/svg/header/topbar/icon-shipping.svg) Frete grátis para São Paulo acima de R$ 300,00"
     }
   }
 }
