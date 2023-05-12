@@ -1,5 +1,17 @@
 @font-face {
-  font-family: 'MyHelvetica';
-  src: url(assets/fonts/MyHelvetica.woff2), url(assets/fonts/MyHelvetica.ttf);
-  font-weight: bold;
+  font-family: 'NotoSans';
+  src: url(assets/fonts/NotoSans-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Bithdtone';
+  src: url(assets/fonts/Birthstone-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Unna';
+  src: url(assets/fonts/Unna-Regular.ttf);
+  font-weight: 400;
 }
