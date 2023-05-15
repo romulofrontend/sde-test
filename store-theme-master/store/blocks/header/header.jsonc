@@ -28,12 +28,7 @@
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true
-    },
-    "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
-    ]
+    }
   },
   "flex-layout.col#spacer": {
     "props": {
@@ -76,7 +71,7 @@
       "verticalAlign": "middle"
     },
     "children": ["vtex.menu@2.x:menu#category-menu"]
-  },
+  },  
   "logo#desktop": {
     "props": {
       "title": "Logo",
@@ -113,9 +108,10 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#category-vinhos",
+      "menu-item#category-alimentos",
+      "menu-item#category-bebidas",
+      "menu-item#category-marcas"
     ],
     "props": {
       "orientation": "vertical"
