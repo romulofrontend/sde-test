@@ -1,0 +1,14 @@
+
+.paragraph--text__topbar{
+  display: flex;
+  align-items: center;
+  font-family: "NotoSans Bold";
+  color: #000;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.image--text__topbar{
+  margin-right: 10px;
+}
