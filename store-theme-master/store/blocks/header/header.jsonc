@@ -74,11 +74,11 @@
   },  
   "logo#desktop": {
     "props": {
-      "title": "Logo",
+      "title": "Logo Casa Flora",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180",
-      "height": "12"
+      "url": "assets/imgs/svg/header/logo-casa-flora-header.svg",
+      "width": "266",
+      "height": "60"
     }
   },
   "header-layout.mobile": {
@@ -122,7 +122,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "url": "assets/imgs/svg/header/logo-casa-flora-header.svg",
       "width": "77.5",
       "height": "27.5"
     }
