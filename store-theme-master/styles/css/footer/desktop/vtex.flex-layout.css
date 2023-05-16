@@ -1,6 +1,6 @@
 .flexRow--menu-row,
 .flexRow--payment-methods,
-.flexRow--law,
-.flexRow--credits{
+.flexRow--footer__law,
+.flexRow--footer__credits{
   background-color: #F1F2F4;
 }
