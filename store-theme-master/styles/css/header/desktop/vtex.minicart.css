@@ -6,12 +6,13 @@
   width: 19px;
   height: 37px;
   position: relative;
-  top: 17px;
+  top: 10px;
 }
 
 .minicartIconContainer{
   width: 19px;
   height: 37px;
+  left: -4px;
 }
 
 .openIconContainer{
@@ -22,11 +23,13 @@
   overflow: unset !important;
   width: 19px;
   height: 37px;
+  position: relative;
+  top: 10px;
 }
 
 :global(.vtex-minicart-2-x-cartIcon){
   width: 19px;
   height: 37px;
   position: relative;
-  top: -20px;
+  top: -13px;
 }
