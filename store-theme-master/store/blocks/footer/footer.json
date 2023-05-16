@@ -6,7 +6,8 @@
     "children": [
       "flex-layout.row#footer-1-desktop",
       "flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop"
+      "flex-layout.row#footer-3-desktop",
+      "flex-layout.row#footer-4-desktop"
     ]
   },
   "flex-layout.row#footer-1-desktop": {
@@ -61,18 +62,29 @@
   },
 
   "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer"],
+    "children": ["rich-text#footer1"],
     "props": {
       "blockClass": "credits"
     }
   },
-  "rich-text#footer": {
+  "rich-text#footer1": {
+    "props": {
+      "text": "BEBIDAS ALCOÓLICAS: VENDAS E CONSUMO PROIBIDO PARA MENORES DE 18 ANOS. Determinação contida no Estatuto da Criança e do Adolescente, Artigo 81.nº II",
+      "blockClass": "footer"
+    }
+  },  
+  "flex-layout.row#footer-4-desktop": {
+    "children": ["rich-text#footer2"],
+    "props": {
+      "blockClass": "credits"
+    }
+  },  
+  "rich-text#footer2": {
     "props": {
       "text": "CASA FLORA LTDA - Inscrita sob o CNPJ 62.808.506/0001-89 - Rua Santa Rosa, 197/207 - São Paulo - SP - EP 03007-040",
       "blockClass": "footer"
     }
   },
-
   "footer-layout.mobile": {
     "children": [
       "flex-layout.row#1-footer-mobile",
@@ -91,7 +103,8 @@
     "children": [
       "accepted-payment-methods",
       "social-networks",
-      "rich-text#footer-mobile"
+      "rich-text#footer-mobile1",
+      "rich-text#footer-mobile2"
     ],
     "props": {
       "blockClass": "payment-methods",
@@ -107,7 +120,13 @@
     },
     "children": ["vtex.menu@2.x:menu#footer-mobile"]
   },
-  "rich-text#footer-mobile": {
+  "rich-text#footer-mobile1": {
+    "props": {
+      "text": "BEBIDAS ALCOÓLICAS: VENDAS E CONSUMO PROIBIDO PARA MENORES DE 18 ANOS. Determinação contida no Estatuto da Criança e do Adolescente, Artigo 81.nº II",
+      "blockClass": "footer"
+    }
+  },
+  "rich-text#footer-mobile2": {
     "props": {
       "text": "CASA FLORA LTDA - Inscrita sob o CNPJ 62.808.506/0001-89 - Rua Santa Rosa, 197/207 - São Paulo - SP - EP 03007-040",
       "blockClass": "footer"
