@@ -41,7 +41,7 @@
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## Produtos",
       "blockClass": "shelfTitle"
     }
   },
@@ -62,7 +62,7 @@
         "tablet": 3,
         "phone": 1
       },
-      "infinite": true,
+      "infinite": false,
       "fullWidth": false,
       "showNavigationArrows": "mobileOnly",
       "blockClass": "shelf"
