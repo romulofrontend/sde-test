@@ -2,10 +2,9 @@
   "store.home": {
     "blocks": [
       "info-card#home",
-      "__fold__",
+      //"__fold__",
       "rich-text#shelf-title",
-      "flex-layout.row#shelf"
-      //"search-result-layout.customQuery#home"
+      "flex-layout.row#shelf"      
     ]
   },
 
@@ -68,25 +67,11 @@
       "blockClass": "shelf"
     }
   },
-  // "search-result-layout.customQuery#home": {
-  //   "props": {
-  //     "querySchema": {
-  //       "skusFilter": "FIRST_AVAILABLE",
-  //       "simulationBehavior": "default"
-  //     }
-  //   }
-  // },
   "info-card#home": {
     "props": {
       "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
+      "imageUrl": "assets/imgs/png/home/banner-home.png",
+      "blockClass": "info-card-home"
     }
   },
 

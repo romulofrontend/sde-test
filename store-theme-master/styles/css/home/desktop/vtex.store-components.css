@@ -1,0 +1,25 @@
+@media only screen and (min-width: 640px) {  
+  .infoCardContainer{
+    background-color: #fff !important;
+  }
+
+  .infoCardContainer--info-card-home .infoCardTextContainer {
+    display: none;
+  }
+
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 100%;
+  }
+
+  .infoCardImage{
+    background-color: #fff;
+  }
+
+  .infoCardImageContainer{
+    width: 100% !important;
+  }
+
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+  }
+}
