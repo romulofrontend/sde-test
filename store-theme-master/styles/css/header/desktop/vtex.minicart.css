@@ -1,9 +1,32 @@
-.cartIcon{
+:global(.vtex-button__label){
+  padding: 0 !important;
+}
+
+.minicartWrapperContainer{
   width: 19px;
   height: 37px;
-  
+  position: relative;
+  top: 17px;
+}
+
+.minicartIconContainer{
+  width: 19px;
+  height: 37px;
 }
 
 .openIconContainer{
-  padding: 0;
+  padding: 0 !important;
+}
+
+.cartIcon{
+  overflow: unset !important;
+  width: 19px;
+  height: 37px;
+}
+
+:global(.vtex-minicart-2-x-cartIcon){
+  width: 19px;
+  height: 37px;
+  position: relative;
+  top: -20px;
 }
