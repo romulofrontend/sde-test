@@ -15,15 +15,6 @@
   margin-right: 14px;
 }
 
-
 .label{
   height: 17px !important;
 }
-
-/*
-
-:global(.vtex-button__label){
-  width: 32px;
-  height: 36px;
-  padding: 0 !important;
-} */
