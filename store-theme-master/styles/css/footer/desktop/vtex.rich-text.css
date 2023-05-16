@@ -2,10 +2,16 @@
   justify-content: center !important;
 }
 
-.paragraph--footer{
+.container--text__law,
+.container--text__credits{
   font-family: "NotoSanS bold";
   font-size: 16px;
   line-height: 21.79px;
   font-weight: 700;
   color: #000;
+  justify-content: center;
+}
+
+.wrapper--text__law{
+  border-bottom: 1px solid #000;
 }
