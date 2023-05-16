@@ -6,3 +6,12 @@
 .flexRow--wrapper__topbar{
   background-color: #E21836;
 }
+
+.flexRowContent--main-header {
+  background-color: #fff !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+  padding-top: 2rem !important;
+  padding-bottom: 1.688rem !important;
+}
