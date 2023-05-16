@@ -4,15 +4,26 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#news",
-      "menu-item#blackfriday",
-      "menu-item#sale",
-      "menu-item#personalization"
+      "rich-text#title-ajuda",
+      "menu-item#centraldeatendimento",
+      "menu-item#falecomosac",
+      "menu-item#termosdeuso",
+      "menu-item#politicadeprivacidade",
+      "menu-item#politicadetroca",
+      "menu-item#politicadeentrega",
+      "menu-item#trabalheconosco",
+      "menu-item#representantes"
     ]
   },
-  "menu-item#news": {
+  "rich-text#title-ajuda": {
+    "props": {      
+      "text": "Ajuda",
+      "blockClass": "title-ajuda"
+    }
+  },
+  "menu-item#centraldeatendimento": {
     "props": {
-      "id": "menu-item-news",
+      "id": "menu-item-centraldeatendimento",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -20,12 +31,12 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "News",
-        "text": "News"
+        "tagTitle": "Central de Atendimento",
+        "text": "Central de Atendimento"
       }
     }
   },
-  "menu-item#blackfriday": {
+  "menu-item#falecomosac": {
     "props": {
       "id": "menu-item-black-friday",
       "type": "custom",
@@ -35,14 +46,14 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "BlackFriday",
-        "text": "Black Friday"
+        "tagTitle": "Fale com o SAC",
+        "text": "Fale com o SAC"
       }
     }
   },
-  "menu-item#sale": {
+  "menu-item#termosdeuso": {
     "props": {
-      "id": "menu-item-sale",
+      "id": "menu-item-termosdeuso",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -50,14 +61,14 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Sale",
-        "text": "Sale"
+        "tagTitle": "Termos de uso",
+        "text": "Termos de uso"
       }
     }
   },
-  "menu-item#personalization": {
+  "menu-item#politicadeprivacidade": {
     "props": {
-      "id": "menu-item-personalization",
+      "id": "menu-item-politicadeprivacidade",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -65,12 +76,71 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Personalization",
-        "text": "Personalization"
+        "tagTitle": "Política de Privacidade",
+        "text": "Política de Privacidade"
       }
     }
   },
-
+  "menu-item#politicadetroca": {
+    "props": {
+      "id": "menu-item-politicadetroca",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Política de Troca",
+        "text": "Política de Troca"
+      }
+    }
+  },
+  "menu-item#politicadeentrega": {
+    "props": {
+      "id": "menu-item-politicadeentrega",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Política de Entrega",
+        "text": "Política de Entrega"
+      }
+    }
+  },
+  "menu-item#trabalheconosco": {
+    "props": {
+      "id": "menu-item-trabalheconosco",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Trabalhe conosco",
+        "text": "Trabalhe conosco"
+      }
+    }
+  },
+  "menu-item#representantes": {
+    "props": {
+      "id": "menu-item-representantes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Representantes",
+        "text": "Representantes"
+      }
+    }
+  },
   "vtex.menu@2.x:menu#footer-decoration": {
     "props": {
       "orientation": "vertical"
@@ -81,7 +151,6 @@
       "menu-item#tvs"
     ]
   },
-
   "menu-item#smartphones": {
     "props": {
       "id": "menu-item-smartphones",
@@ -130,78 +199,7 @@
     }
   },
 
-  "vtex.menu@2.x:menu#footer-bags": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#bags",
-      "menu-item#backpacks",
-      "menu-item#necessaire"
-    ]
-  },
 
-  "menu-item#bags": {
-    "props": {
-      "id": "menu-item-bags",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bags/d",
-        "noFollow": true,
-        "tagTitle": "Bags",
-        "text": "Bags"
-      }
-    }
-  },
-
-  "menu-item#backpacks": {
-    "props": {
-      "id": "menu-item-backpacks",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bags/backpacks",
-        "noFollow": true,
-        "tagTitle": "Backpacks",
-        "text": "Backpacks"
-      }
-    }
-  },
-
-  "menu-item#necessaire": {
-    "props": {
-      "id": "menu-item-necessaire",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bags/necessaire",
-        "noFollow": true,
-        "tagTitle": "Necessaire",
-        "text": "Necessaire"
-      }
-    }
-  },
-
-  "vtex.menu@2.x:menu#footer-clothing": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#clothing",
-      "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
-    ]
-  },
 
   "vtex.menu@2.x:menu#footer-mobile": {
     "props": {
