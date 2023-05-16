@@ -5,6 +5,7 @@
       "__fold__",
       "rich-text#shelf-title",
       "flex-layout.row#shelf"
+      //"search-result-layout.customQuery#home"
     ]
   },
 
@@ -63,10 +64,18 @@
       },
       "infinite": true,
       "fullWidth": false,
+      "showNavigationArrows": "mobileOnly",
       "blockClass": "shelf"
     }
   },
-
+  // "search-result-layout.customQuery#home": {
+  //   "props": {
+  //     "querySchema": {
+  //       "skusFilter": "FIRST_AVAILABLE",
+  //       "simulationBehavior": "default"
+  //     }
+  //   }
+  // },
   "info-card#home": {
     "props": {
       "id": "info-card-home",
