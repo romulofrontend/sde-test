@@ -6,8 +6,18 @@
   width: 350px;
 }
 
+:global(.vtex-styleguide-9-x-input){
+  padding: 0;
+}
+
 :global(.vtex-input-prefix__group){
   border-radius: 20px;
+  flex-direction: row-reverse;
+  height: 42px !important;
+}
+
+:global(.vtex-input__suffix){
+  padding: 0 2px 0 15px;
 }
 
 .sizeDesktop{
