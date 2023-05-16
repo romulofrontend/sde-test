@@ -4,9 +4,9 @@
 
 .sellingPriceValue--summary{
   font-family: "NotoSans Bold";
-  font-size: 1.375rem;
-  font-weight: 700;
-  color: #E21836;
+  font-size: 1.375rem !important;
+  font-weight: 700 !important;
+  color: #E21836 !important;
 }
 
 .savings{
@@ -15,10 +15,10 @@
 
 .installments--summary{
   font-family: "NotoSans Bold";
-  font-size: 1rem;
+  font-size: 1rem !important;
   font-weight: 700;
   text-transform: lowercase;
-  color: #000;
+  color: #000 !important;
   text-align: center;
   padding-bottom: 0.688rem;
   border-bottom: 1px solid #000;
