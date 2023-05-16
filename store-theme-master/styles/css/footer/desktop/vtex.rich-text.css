@@ -15,3 +15,14 @@
 .wrapper--text__law{
   border-bottom: 1px solid #000;
 }
+
+.paragraph--title-ajuda{
+  font-family: "NotoSanS bold";
+  font-size: 16px;
+  line-height: 21.79px;
+  font-weight: 700;
+  color: #E11E35;
+  text-transform: uppercase;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
