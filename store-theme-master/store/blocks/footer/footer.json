@@ -64,7 +64,7 @@
   "flex-layout.row#footer-3-desktop": {
     "children": ["rich-text#footer1"],
     "props": {
-      "blockClass": "credits"
+      "blockClass": "law"
     }
   },
   "rich-text#footer1": {
