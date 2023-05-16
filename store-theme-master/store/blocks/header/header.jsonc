@@ -54,7 +54,6 @@
       "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
       "login",
       "minicart.v2"
     ]
@@ -76,6 +75,12 @@
       "placeholder": "DIGITE O QUE VOCÊ PROCURA"
     }
   },  
+  "login": {
+    "props": {
+      "showIconProfile": true,
+      "hideIconLabel": true
+    }
+  },
   "logo#desktop": {
     "props": {
       "title": "Logo Casa Flora",
