@@ -1,9 +1,12 @@
+.nameContainer{
+  text-align: center;
+}
+
 .brandName{
   font-family: "Unna";
   font-size: 1.25rem !important;
   font-weight: 400 !important;
   line-height: 1.503rem;
   text-transform: uppercase;
-  text-align: center;
   color: #000 !important;
 }
