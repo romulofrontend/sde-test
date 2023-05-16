@@ -9,10 +9,6 @@
   color: #E21836 !important;
 }
 
-.savings{
-  display: none !important;
-}
-
 .installments--summary{
   font-family: "NotoSans Bold";
   font-size: 1rem !important;
@@ -26,4 +22,8 @@
 
 .currencyCode--summary{
   text-transform: uppercase;
+}
+
+.savings--summary{
+  display: none !important;
 }
