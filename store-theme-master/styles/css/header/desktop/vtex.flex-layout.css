@@ -14,6 +14,7 @@
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
   padding-top: 2rem !important;
   padding-bottom: 1.688rem !important;
+  padding-right: 2rem !important;
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent){
