@@ -47,8 +47,7 @@
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
+      "preventVerticalStretch": true
     },
     "children": [
       "flex-layout.col#logo-desktop",
@@ -71,6 +70,11 @@
       "verticalAlign": "middle"
     },
     "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+  "search-bar":{
+    "props": {
+      "placeholder": "DIGITE O QUE VOCÊ PROCURA"
+    }
   },  
   "logo#desktop": {
     "props": {
