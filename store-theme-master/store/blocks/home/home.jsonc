@@ -1,14 +1,10 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",     
+      "info-card#home",
       "__fold__",
       "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "flex-layout.row#shelf"
     ]
   },
 
