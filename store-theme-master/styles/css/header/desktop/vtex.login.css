@@ -1,0 +1,29 @@
+.profileIcon{
+  overflow: unset !important;
+  width: 16px;
+  height: 17px !important;
+  position: relative;
+  top: -11px;
+  left: 4px;
+}
+
+.container{
+  width: 32px;
+  height: 36px;
+  position: relative;
+  top: 13px;
+  margin-right: 14px;
+}
+
+
+.label{
+  height: 17px !important;
+}
+
+/*
+
+:global(.vtex-button__label){
+  width: 32px;
+  height: 36px;
+  padding: 0 !important;
+} */
