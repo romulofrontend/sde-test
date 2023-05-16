@@ -1,0 +1,29 @@
+.listPrice{
+  display: none;
+}
+
+.sellingPriceValue--summary{
+  font-family: "NotoSans Bold";
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #E21836;
+}
+
+.savings{
+  display: none !important;
+}
+
+.installments--summary{
+  font-family: "NotoSans Bold";
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: lowercase;
+  color: #000;
+  text-align: center;
+  padding-bottom: 0.688rem;
+  border-bottom: 1px solid #000;
+}
+
+.currencyCode--summary{
+  text-transform: uppercase;
+}
