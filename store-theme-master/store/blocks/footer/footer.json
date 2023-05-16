@@ -64,25 +64,25 @@
   "flex-layout.row#footer-3-desktop": {
     "children": ["rich-text#footer1"],
     "props": {
-      "blockClass": "law"
+      "blockClass": "footer__law"
     }
   },
   "rich-text#footer1": {
     "props": {
       "text": "BEBIDAS ALCOÓLICAS: VENDAS E CONSUMO PROIBIDO PARA MENORES DE 18 ANOS. Determinação contida no Estatuto da Criança e do Adolescente, Artigo 81.nº II",
-      "blockClass": "footer"
+      "blockClass": "text__law"
     }
   },  
   "flex-layout.row#footer-4-desktop": {
     "children": ["rich-text#footer2"],
     "props": {
-      "blockClass": "credits"
+      "blockClass": "footer__credits"
     }
   },  
   "rich-text#footer2": {
     "props": {
       "text": "CASA FLORA LTDA - Inscrita sob o CNPJ 62.808.506/0001-89 - Rua Santa Rosa, 197/207 - São Paulo - SP - EP 03007-040",
-      "blockClass": "footer"
+      "blockClass": "text__credits"
     }
   },
   "footer-layout.mobile": {
