@@ -1,6 +1,46 @@
-.flexRow--menu-row,
-.flexRow--payment-methods,
-.flexRow--footer__law,
-.flexRow--footer__credits{
+.flexRow--footer-areas-desktop,
+.flexRow--footer-law-desktop,
+.flexRow--footer-credits-desktop{
   background-color: #F1F2F4;
+}
+
+.flexRow--footer-areas-desktop{
+  padding: 4.438rem 0 3.736rem 0;
+  margin-top: 3.563rem;
+}
+
+.flexRowContent--footer-areas-desktop{
+  justify-content: space-between !important;
+}
+
+.flexRowContent--footer-brand-box-image{
+  justify-content: flex-start !important;
+  height: 60px;
+  margin-bottom: 2.25rem;
+}
+
+.flexRowContent--footer-social-box{
+  margin-top: 20px;
+}
+
+.flexRowContent--footer-safety-powered-box{
+  justify-content: space-between !important;
+}
+
+.flexRowContent--footer-safety-box-image,
+.flexRowContent--footer-powered-box-image,
+.flexRowContent--footer-social-box{
+  justify-content: flex-start !important;
+}
+
+.flexRowContent--footer-social-box{
+  align-items: center;
+}
+
+.flexColChild--col-footer-brand-box-image-text{
+  height: 100px !important;
+}
+
+.flexCol--footer-safety-box{
+  margin-right: 20px;
 }

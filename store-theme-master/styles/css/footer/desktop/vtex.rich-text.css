@@ -2,9 +2,9 @@
   justify-content: center !important;
 }
 
-.container--text__law,
-.container--text__credits{
-  font-family: "NotoSanS bold";
+.container--footer-law-text,
+.container--footer-credits-text{
+  font-family: "NotoSans Bold";
   font-size: 16px;
   line-height: 21.79px;
   font-weight: 700;
@@ -12,17 +12,46 @@
   justify-content: center;
 }
 
-.wrapper--text__law{
+.wrapper--footer-law-text{
   border-bottom: 1px solid #000;
 }
 
-.paragraph--title-ajuda{
-  font-family: "NotoSanS bold";
-  font-size: 16px;
-  line-height: 21.79px;
+.paragraph--title-ajuda,
+.paragraph--footer-social-title,
+.paragraph--footer-safety-title,
+.paragraph--footer-powered-title,
+.paragraph--footer-payments-title,
+.paragraph--footer-brand-text{
+  font-size: 1rem;
+  line-height: 1.362rem;
+}
+
+.paragraph--title-ajuda,
+.paragraph--footer-social-title,
+.paragraph--footer-safety-title,
+.paragraph--footer-powered-title,
+.paragraph--footer-payments-title{
+  font-family: "NotoSans Bold";
   font-weight: 700;
   color: #E11E35;
   text-transform: uppercase;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+}
+
+.paragraph--footer-brand-text{
+  font-family: "NotoSanS Regular";
+  font-weight: 400;
+  color: #000;
+  width: 36.4rem;
+  margin: 0 !important;
+}
+
+.paragraph--title-ajuda,
+.paragraph--footer-safety-title,
+.paragraph--footer-powered-title,
+.paragraph--footer-payments-title{
+  margin: 0 0 1.478rem 0;
+}
+
+.paragraph--footer-social-title{
+  margin: 0 1.25rem 0 0;
 }

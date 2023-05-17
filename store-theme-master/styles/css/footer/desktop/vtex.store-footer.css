@@ -1,0 +1,26 @@
+.socialNetworksContainer{
+  vertical-align: middle;
+}
+
+.socialNetworkImage--facebook,
+.socialNetworkImage--instagram{
+  width: 0;
+  height: 0;
+}
+
+.socialNetworkLink--facebook::after,
+.socialNetworkLink--instagram::after{
+  content: "";
+  width: 32px !important;
+  height: 32px !important;
+  background-size: cover;
+}
+
+.socialNetworkLink--facebook::after{  
+  background-image: url(assets/imgs/svg/footer/social-media-facebook.svg);
+}
+
+.socialNetworkLink--instagram::after{
+  background-image: url(assets/imgs/svg/footer/social-media-instagram.svg);
+}
+

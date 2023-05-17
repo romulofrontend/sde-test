@@ -17,7 +17,8 @@
   
   "flex-layout.row#footer-areas-desktop": {
     "props": {
-      "blockClass": "footer-areas-desktop"
+      "blockClass": "footer-areas-desktop",
+      "preventHorizontalStretch": true
     },
     "children": [
       "flex-layout.col#footer-brand-desktop",
@@ -27,7 +28,7 @@
   },
   "flex-layout.col#footer-brand-desktop": {
     "props": {
-      "blockClass":"col-footer-brand-box"
+      "blockClass":"col-footer-brand-box-image-text"
     },
     "children": [
       "flex-layout.row#footer-brand-box-image",
@@ -36,7 +37,8 @@
   },
   "flex-layout.row#footer-brand-box-image": {
     "props": {
-      "blockClass": "footer-brand-box-image"
+      "blockClass": "footer-brand-box-image",
+      "preventHorizontalStretch": true
     },
     "children": [
       "image#footer-brand-image"
@@ -46,7 +48,9 @@
     "props": {
       "blockClass":"footer-brand-image",
       "src": "assets/imgs/svg/footer/casa-flora-logo.svg",
-      "maxHeight": 60
+      "maxHeight": 60,
+      "alt": "logo da Casa Flora",
+      "link": "https://www.casaflora.com.br/"
     }
   },
   "flex-layout.row#footer-brand-box-text": {
@@ -65,7 +69,7 @@
       "text": "As fotos aqui veiculadas, logotipo e marca são de propriedade da Casa Flora. É vetada a sua reprodução, total ou parcial, sem a expressa autorização. Preços e condições de pagamento exclusivos para compras realizadas através do site e suporte. Os estoques são limitados e os valores não se aplicam à nossa loja física podendo sofrer alterações sem aviso prévio."
     }
   },
-  
+
   
   "flex-layout.col#footer-help-social-desktop": {
     "props": {
@@ -86,11 +90,17 @@
   },
   "flex-layout.row#footer-social-box": {
     "props": {
-      "blockClass": "footer-social-box"
+      "blockClass": "footer-social-box",
+      "preventHorizontalStretch": true
     },
     "children": [
-      "rich-text#footer-social-title",
-      "social-networks"
+      "flex-layout.col#col-footer-social-box-title",
+      "flex-layout.col#col-footer-social-box-buttons"
+    ]
+  },
+  "flex-layout.col#col-footer-social-box-title":{
+    "children": [
+      "rich-text#footer-social-title"
     ]
   },
   "rich-text#footer-social-title": {
@@ -101,15 +111,20 @@
       "text": "Siga-nos"
     }
   },
+  "flex-layout.col#col-footer-social-box-buttons": {
+    "children": [
+      "social-networks"
+    ]
+  },
   "social-networks": {
     "props": {
-      "blockClass": "footer-social-networks",
       "socialNetworks": [
         {"url": "https://facebook.com/foo", "name": "Facebook"},
         {"url": "https://instagram.com/foo", "name": "Instagram"}
       ]
     }
   },
+
 
 
   "flex-layout.col#footer-safety-powered-payments-desktop":{
@@ -123,6 +138,9 @@
   },
 
   "flex-layout.row#footer-safety-powered-box": {
+    "props": {
+      "blockClass": "footer-safety-powered-box"
+    },
     "children": [
       "flex-layout.col#footer-safety-box",
       "flex-layout.col#footer-powered-box"
@@ -148,14 +166,15 @@
   "rich-text#footer-safety-title": {
     "props": {
       "blockClass": "footer-safety-title",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
       "text": "Compra 100% Segura"
     }
   },
   "flex-layout.row#footer-safety-box-image": {
     "props": {
-      "blockClass": "footer-safety-box-image"
+      "blockClass": "footer-safety-box-image",
+      "preventHorizontalStretch": true
     },
     "children": [
       "image#footer-safety-image"
@@ -165,7 +184,8 @@
     "props": {
       "blockClass":"footer-safety-image",
       "src": "assets/imgs/png/footer/security.png",
-      "maxHeight": 48
+      "maxHeight": 48,
+      "alt": "Selos de Compra 100% Segura"
     }
   },
   "flex-layout.col#footer-powered-box": {
@@ -182,20 +202,22 @@
       "blockClass": "footer-powered-box-title"
     },
     "children": [
-      "rich-text#footer-safety-title"
+      "rich-text#footer-powered-title"
     ]
   },
   "rich-text#footer-powered-title": {
     "props": {
       "blockClass": "footer-powered-title",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
       "text": "Powered By"
     }
   },
   "flex-layout.row#footer-powered-box-image": {
     "props": {
-      "blockClass": "footer-powered-box-image"
+      "blockClass": "footer-powered-box-image",
+      "horizontalAign": "left",
+      "preventHorizontalStretch": true
     },
     "children": [
       "image#footer-powered-image"
@@ -205,7 +227,9 @@
     "props": {
       "blockClass":"footer-powered-image",
       "src": "assets/imgs/svg/footer/social-digital-commerce-logo.svg",
-      "maxHeight": 43
+      "maxHeight": 43,
+      "alt": "logo da Social Digital Ecommerce",
+      "link": "https://socialdigitalcommerce.com.br/"
     }
   },
 
@@ -245,7 +269,8 @@
   },
   "flex-layout.row#footer-payments-box-image": {
     "props": {
-      "blockClass": "footer-payments-box-image"
+      "blockClass": "footer-payments-box-image",
+      "preventHorizontalStretch": true
     },
     "children": [
       "image#footer-payments-image"
@@ -255,7 +280,8 @@
     "props": {
       "blockClass":"footer-payments-image",
       "src": "assets/imgs/png/footer/payments.png",
-      "maxHeight": 49
+      "maxHeight": 49,
+      "alt": "Logos das formas de pagamento"
     }
   },
 
