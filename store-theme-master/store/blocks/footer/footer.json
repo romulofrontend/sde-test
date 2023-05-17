@@ -15,37 +15,6 @@
     ]
   },
   
-  "flex-layout.row#footer-law-desktop": {
-    "children": ["rich-text#footer-law-text"],
-    "props": {
-      "blockClass": "footer-law-desktop"
-    }
-  },
-  "rich-text#footer-law-text": {
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "BEBIDAS ALCOÓLICAS: VENDAS E CONSUMO PROIBIDO PARA MENORES DE 18 ANOS. Determinação contida no Estatuto da Criança e do Adolescente, Artigo 81.nº II",
-      "blockClass": "footer-law-text"
-    }
-  }, 
-  
-  "flex-layout.row#footer-credits-desktop": {
-    "children": ["rich-text#footer-credits-text"],
-    "props": {
-      "blockClass": "footer-credits-desktop"
-    }
-  },
-  "rich-text#footer-credits-text": {
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "text": "CASA FLORA LTDA - Inscrita sob o CNPJ 62.808.506/0001-89 - Rua Santa Rosa, 197/207 - São Paulo - SP - EP 03007-040",
-      "blockClass": "footer-credits-text"
-    }
-  },
-    
-  
   "flex-layout.row#footer-areas-desktop": {
     "props": {
       "blockClass": "footer-areas-desktop"
@@ -58,52 +27,67 @@
   },
   "flex-layout.col#footer-brand-desktop": {
     "props": {
-      "blockClass":"col-footer-brand-desktop"
+      "blockClass":"col-footer-brand-box"
     },
     "children": [
-      "flex-layout.row#footer-brand-logo",
-      "flex-layout.row#footer-brand-text"
+      "flex-layout.row#footer-brand-box-image",
+      "flex-layout.row#footer-brand-box-text"
     ]
   },
-  "flex-layout.row#footer-brand-logo": {
-    "children": [
-      "image#footer-brand-logo"
-    ]
-  },
-  "image#footer-brand-logo": {
+  "flex-layout.row#footer-brand-box-image": {
     "props": {
-      "blockClass":"footer-brand-logo",
+      "blockClass": "footer-brand-box-image"
+    },
+    "children": [
+      "image#footer-brand-image"
+    ]
+  },
+  "image#footer-brand-image": {
+    "props": {
+      "blockClass":"footer-brand-image",
       "src": "assets/imgs/svg/footer/casa-flora-logo.svg",
       "maxHeight": 60
     }
   },
-  "flex-layout.row#footer-brand-text": {
+  "flex-layout.row#footer-brand-box-text": {
+    "props": {
+      "blockClass": "footer-brand-box-text"
+    },
     "children": [
       "rich-text#footer-brand-text"
     ]
   },
   "rich-text#footer-brand-text": {
     "props": {
+      "blockClass":"footer-brand-text",
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
-      "text": "As fotos aqui veiculadas, logotipo e marca são de propriedade da Casa Flora. É vetada a sua reprodução, total ou parcial, sem a expressa autorização. Preços e condições de pagamento exclusivos para compras realizadas através do site e suporte. Os estoques são limitados e os valores não se aplicam à nossa loja física podendo sofrer alterações sem aviso prévio.",
-      "blockClass":"footer-brand-text"
+      "text": "As fotos aqui veiculadas, logotipo e marca são de propriedade da Casa Flora. É vetada a sua reprodução, total ou parcial, sem a expressa autorização. Preços e condições de pagamento exclusivos para compras realizadas através do site e suporte. Os estoques são limitados e os valores não se aplicam à nossa loja física podendo sofrer alterações sem aviso prévio."
     }
   },
-
-
+  
+  
   "flex-layout.col#footer-help-social-desktop": {
+    "props": {
+      "blockClass": "footer-help-social-desktop"
+    },
     "children": [
-      "flex-layout.row#footer-help-desktop",
-      "flex-layout.row#footer-social-desktop"
+      "flex-layout.row#footer-help-box",
+      "flex-layout.row#footer-social-box"
     ]
   },
-  "flex-layout.row#footer-help-desktop": {
+  "flex-layout.row#footer-help-box": {
+    "props": {
+      "blockClass": "footer-help-box"
+    },
     "children": [
       "vtex.menu@2.x:menu#help"
     ]
   },
-  "flex-layout.row#footer-social-desktop": {
+  "flex-layout.row#footer-social-box": {
+    "props": {
+      "blockClass": "footer-social-box"
+    },
     "children": [
       "rich-text#footer-social-title",
       "social-networks"
@@ -111,6 +95,7 @@
   },
   "rich-text#footer-social-title": {
     "props": {
+      "blockClass": "footer-social-title",
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
       "text": "Siga-nos"
@@ -118,6 +103,7 @@
   },
   "social-networks": {
     "props": {
+      "blockClass": "footer-social-networks",
       "socialNetworks": [
         {"url": "https://facebook.com/foo", "name": "Facebook"},
         {"url": "https://instagram.com/foo", "name": "Instagram"}
@@ -125,37 +111,52 @@
     }
   },
 
+
   "flex-layout.col#footer-safety-powered-payments-desktop":{
+    "props": {
+      "blockClass": "footer-safety-powered-payments-desktop"
+    },
     "children": [
-      "flex-layout.row#footer-safety-powered-desktop",
-      "flex-layout.row#footer-payments-desktop"
+      "flex-layout.row#footer-safety-powered-box",
+      "flex-layout.row#footer-payments-box"
     ]
   },
-  "flex-layout.row#footer-safety-powered-desktop": {
+
+  "flex-layout.row#footer-safety-powered-box": {
     "children": [
-      "flex-layout.col#footer-safety-desktop",
-      "flex-layout.col#footer-powered-desktop"
+      "flex-layout.col#footer-safety-box",
+      "flex-layout.col#footer-powered-box"
     ]
   },
-  "flex-layout.col#footer-safety-desktop":{
+  "flex-layout.col#footer-safety-box":{
+    "props": {
+      "blockClass": "footer-safety-box"
+    },
     "children": [
-      "flex-layout.row#footer-safety-title",
-      "flex-layout.row#footer-safety-image"
+      "flex-layout.row#footer-safety-box-title",
+      "flex-layout.row#footer-safety-box-image"
     ]
   },
-  "flex-layout.row#footer-safety-title":{
+  "flex-layout.row#footer-safety-box-title":{
+    "props": {
+      "blockClass": "footer-safety-box-title"
+    },
     "children": [
       "rich-text#footer-safety-title"
     ]
   },
   "rich-text#footer-safety-title": {
     "props": {
+      "blockClass": "footer-safety-title",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Compra 100% Segura"
     }
   },
-  "flex-layout.row#footer-safety-image": {
+  "flex-layout.row#footer-safety-box-image": {
+    "props": {
+      "blockClass": "footer-safety-box-image"
+    },
     "children": [
       "image#footer-safety-image"
     ]
@@ -167,26 +168,35 @@
       "maxHeight": 48
     }
   },
-
-  "flex-layout.col#footer-powered-desktop": {
+  "flex-layout.col#footer-powered-box": {
+    "props": {
+      "blockClass": "footer-powered-box"
+    },
     "children": [
-      "flex-layout.row#footer-powered-title",
-      "flex-layout.row#footer-powered-image"
+      "flex-layout.row#footer-powered-box-title",
+      "flex-layout.row#footer-powered-box-image"
     ]
   },
-  "flex-layout.row#footer-powered-title":{
+  "flex-layout.row#footer-powered-box-title":{
+    "props": {
+      "blockClass": "footer-powered-box-title"
+    },
     "children": [
       "rich-text#footer-safety-title"
     ]
   },
   "rich-text#footer-powered-title": {
     "props": {
+      "blockClass": "footer-powered-title",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Powered By"
     }
   },
-  "flex-layout.row#footer-powered-image": {
+  "flex-layout.row#footer-powered-box-image": {
+    "props": {
+      "blockClass": "footer-powered-box-image"
+    },
     "children": [
       "image#footer-powered-image"
     ]
@@ -199,39 +209,89 @@
     }
   },
 
-  "flex-layout.row#footer-payments-desktop": {
+
+  "flex-layout.row#footer-payments-box": {
+    "props": {
+      "blockClass": "footer-payments-box"
+    },
     "children": [
-      "flex-layout.col#footer-payments"
+      "flex-layout.col#footer-payments-box-title-image"
     ]
   },
-  "flex-layout.col#footer-payments": {
+  "flex-layout.col#footer-payments-box-title-image": {
+    "props": {
+      "blockClass": "footer-payments-box-title-image"
+    },
     "children": [
-      "flex-layout.row#footer-payments-title",
-      "flex-layout.row#footer-payments-image"
+      "flex-layout.row#footer-payments-box-title",
+      "flex-layout.row#footer-payments-box-image"
     ]
   },
-  "flex-layout.row#footer-payments-title": {
+  "flex-layout.row#footer-payments-box-title": {
+    "props": {
+      "blockClass": "footer-payments-box-title"
+    },
     "children": [
       "rich-text#footer-payments-title"
     ]
   },
   "rich-text#footer-payments-title": {
     "props": {
+      "blockClass": "footer-payments-title",
       "textAlignment": "LEFT",
       "textPosition": "LEFT",
       "text": "Formas de Pagamento"
     }
   },
-  "flex-layout.row#footer-payments-image": {
+  "flex-layout.row#footer-payments-box-image": {
+    "props": {
+      "blockClass": "footer-payments-box-image"
+    },
     "children": [
       "image#footer-payments-image"
     ]
   },
   "image#footer-payments-image": {
     "props": {
-      "blockClass":"footer-powered-image",
+      "blockClass":"footer-payments-image",
       "src": "assets/imgs/png/footer/payments.png",
       "maxHeight": 49
+    }
+  },
+
+
+  "flex-layout.row#footer-law-desktop": {
+    "props": {
+      "blockClass": "footer-law-desktop"
+    },
+    "children": [
+      "rich-text#footer-law-text"
+    ]
+  },
+  "rich-text#footer-law-text": {
+    "props": {
+      "blockClass": "footer-law-text",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "BEBIDAS ALCOÓLICAS: VENDAS E CONSUMO PROIBIDO PARA MENORES DE 18 ANOS. Determinação contida no Estatuto da Criança e do Adolescente, Artigo 81.nº II"
+    }
+  }, 
+
+  
+  "flex-layout.row#footer-credits-desktop": {
+    "props": {
+      "blockClass": "footer-credits-desktop"
+    },
+    "children": [
+      "rich-text#footer-credits-text"
+    ]
+  },
+  "rich-text#footer-credits-text": {
+    "props": {
+      "blockClass": "footer-credits-text",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "CASA FLORA LTDA - Inscrita sob o CNPJ 62.808.506/0001-89 - Rua Santa Rosa, 197/207 - São Paulo - SP - EP 03007-040"
     }
   }
 }
