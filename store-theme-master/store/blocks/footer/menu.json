@@ -1,5 +1,5 @@
 {
-  "vtex.menu@2.x:menu#Products": {
+  "vtex.menu@2.x:menu#help": {
     "props": {
       "orientation": "vertical"
     },
@@ -16,7 +16,7 @@
     ]
   },
   "rich-text#title-ajuda": {
-    "props": {      
+    "props": {
       "text": "Ajuda",
       "blockClass": "title-ajuda"
     }
