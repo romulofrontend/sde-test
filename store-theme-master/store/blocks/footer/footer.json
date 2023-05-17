@@ -1,134 +1,237 @@
 {
   "footer": {
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
-  },
-  "footer-layout.desktop": {
-    "children": [
-      "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop",
-      "flex-layout.row#footer-4-desktop"
+    "blocks": [
+      "footer-layout.desktop"
     ]
   },
-  "flex-layout.row#footer-1-desktop": {
-    "children": [
-      
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "footer-spacer",
-      "social-networks"
-    ],
+  "footer-layout.desktop": {
     "props": {
-      "blockClass": "menu-row",
-      "paddingTop": 6,
-      "paddingBottom": 3
+      "blockClass": "footer-desktop"
+    },
+    "children": [
+      "flex-layout.row#footer-areas-desktop",
+      "flex-layout.row#footer-law-desktop",
+      "flex-layout.row#footer-credits-desktop"
+    ]
+  },
+  
+  "flex-layout.row#footer-law-desktop": {
+    "children": ["rich-text#footer-law-text"],
+    "props": {
+      "blockClass": "footer-law-desktop"
+    }
+  },
+  "rich-text#footer-law-text": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "BEBIDAS ALCOÓLICAS: VENDAS E CONSUMO PROIBIDO PARA MENORES DE 18 ANOS. Determinação contida no Estatuto da Criança e do Adolescente, Artigo 81.nº II",
+      "blockClass": "footer-law-text"
+    }
+  }, 
+  
+  "flex-layout.row#footer-credits-desktop": {
+    "children": ["rich-text#footer-credits-text"],
+    "props": {
+      "blockClass": "footer-credits-desktop"
+    }
+  },
+  "rich-text#footer-credits-text": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "CASA FLORA LTDA - Inscrita sob o CNPJ 62.808.506/0001-89 - Rua Santa Rosa, 197/207 - São Paulo - SP - EP 03007-040",
+      "blockClass": "footer-credits-text"
+    }
+  },
+    
+  
+  "flex-layout.row#footer-areas-desktop": {
+    "props": {
+      "blockClass": "footer-areas-desktop"
+    },
+    "children": [
+      "flex-layout.col#footer-brand-desktop",
+      "flex-layout.col#footer-help-social-desktop",
+      "flex-layout.col#footer-safety-powered-payments-desktop"
+    ]
+  },
+  "flex-layout.col#footer-brand-desktop": {
+    "props": {
+      "blockClass":"col-footer-brand-desktop"
+    },
+    "children": [
+      "flex-layout.row#footer-brand-logo",
+      "flex-layout.row#footer-brand-text"
+    ]
+  },
+  "flex-layout.row#footer-brand-logo": {
+    "children": [
+      "image#footer-brand-logo"
+    ]
+  },
+  "image#footer-brand-logo": {
+    "props": {
+      "blockClass":"footer-brand-logo",
+      "src": "assets/imgs/svg/footer/casa-flora-logo.svg",
+      "maxHeight": 60
+    }
+  },
+  "flex-layout.row#footer-brand-text": {
+    "children": [
+      "rich-text#footer-brand-text"
+    ]
+  },
+  "rich-text#footer-brand-text": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "As fotos aqui veiculadas, logotipo e marca são de propriedade da Casa Flora. É vetada a sua reprodução, total ou parcial, sem a expressa autorização. Preços e condições de pagamento exclusivos para compras realizadas através do site e suporte. Os estoques são limitados e os valores não se aplicam à nossa loja física podendo sofrer alterações sem aviso prévio.",
+      "blockClass":"footer-brand-text"
     }
   },
 
+
+  "flex-layout.col#footer-help-social-desktop": {
+    "children": [
+      "flex-layout.row#footer-help-desktop",
+      "flex-layout.row#footer-social-desktop"
+    ]
+  },
+  "flex-layout.row#footer-help-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#help"
+    ]
+  },
+  "flex-layout.row#footer-social-desktop": {
+    "children": [
+      "rich-text#footer-social-title",
+      "social-networks"
+    ]
+  },
+  "rich-text#footer-social-title": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Siga-nos"
+    }
+  },
   "social-networks": {
     "props": {
       "socialNetworks": [
-        {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
-        },
-        {
-          "name": "Twitter",
-          "url": "https://twitter.com/vtexonline"
-        },
-        {
-          "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
-        }
+        {"url": "https://facebook.com/foo", "name": "Facebook"},
+        {"url": "https://instagram.com/foo", "name": "Instagram"}
       ]
     }
   },
 
-  "flex-layout.row#footer-2-desktop": {
-    "children": ["accepted-payment-methods"],
+  "flex-layout.col#footer-safety-powered-payments-desktop":{
+    "children": [
+      "flex-layout.row#footer-safety-powered-desktop",
+      "flex-layout.row#footer-payments-desktop"
+    ]
+  },
+  "flex-layout.row#footer-safety-powered-desktop": {
+    "children": [
+      "flex-layout.col#footer-safety-desktop",
+      "flex-layout.col#footer-powered-desktop"
+    ]
+  },
+  "flex-layout.col#footer-safety-desktop":{
+    "children": [
+      "flex-layout.row#footer-safety-title",
+      "flex-layout.row#footer-safety-image"
+    ]
+  },
+  "flex-layout.row#footer-safety-title":{
+    "children": [
+      "rich-text#footer-safety-title"
+    ]
+  },
+  "rich-text#footer-safety-title": {
     "props": {
-      "blockClass": "payment-methods"
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Compra 100% Segura"
     }
   },
-  "accepted-payment-methods": {
+  "flex-layout.row#footer-safety-image": {
+    "children": [
+      "image#footer-safety-image"
+    ]
+  },
+  "image#footer-safety-image": {
     "props": {
-      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
+      "blockClass":"footer-safety-image",
+      "src": "assets/imgs/png/footer/security.png",
+      "maxHeight": 48
     }
   },
 
-  "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer1"],
-    "props": {
-      "blockClass": "footer__law"
-    }
-  },
-  "rich-text#footer1": {
-    "props": {
-      "text": "BEBIDAS ALCOÓLICAS: VENDAS E CONSUMO PROIBIDO PARA MENORES DE 18 ANOS. Determinação contida no Estatuto da Criança e do Adolescente, Artigo 81.nº II",
-      "blockClass": "text__law"
-    }
-  },  
-  "flex-layout.row#footer-4-desktop": {
-    "children": ["rich-text#footer2"],
-    "props": {
-      "blockClass": "footer__credits"
-    }
-  },  
-  "rich-text#footer2": {
-    "props": {
-      "text": "CASA FLORA LTDA - Inscrita sob o CNPJ 62.808.506/0001-89 - Rua Santa Rosa, 197/207 - São Paulo - SP - EP 03007-040",
-      "blockClass": "text__credits"
-    }
-  },
-  "footer-layout.mobile": {
+  "flex-layout.col#footer-powered-desktop": {
     "children": [
-      "flex-layout.row#1-footer-mobile",
-      "flex-layout.row#2-footer-mobile"
+      "flex-layout.row#footer-powered-title",
+      "flex-layout.row#footer-powered-image"
     ]
   },
-  "flex-layout.row#2-footer-mobile": {
-    "children": ["flex-layout.col#footer-1-mobile"],
-    "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4
-    }
-  },
-  "flex-layout.col#footer-1-mobile": {
+  "flex-layout.row#footer-powered-title":{
     "children": [
-      "accepted-payment-methods",
-      "social-networks",
-      "rich-text#footer-mobile1",
-      "rich-text#footer-mobile2"
-    ],
+      "rich-text#footer-safety-title"
+    ]
+  },
+  "rich-text#footer-powered-title": {
     "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4,
-      "rowGap": 4
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Powered By"
     }
   },
-  "flex-layout.row#1-footer-mobile": {
-    "props": {
-      "paddingTop": 4,
-      "paddingBottom": 4
-    },
-    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+  "flex-layout.row#footer-powered-image": {
+    "children": [
+      "image#footer-powered-image"
+    ]
   },
-  "rich-text#footer-mobile1": {
+  "image#footer-powered-image": {
     "props": {
-      "text": "BEBIDAS ALCOÓLICAS: VENDAS E CONSUMO PROIBIDO PARA MENORES DE 18 ANOS. Determinação contida no Estatuto da Criança e do Adolescente, Artigo 81.nº II",
-      "blockClass": "footer"
+      "blockClass":"footer-powered-image",
+      "src": "assets/imgs/svg/footer/social-digital-commerce-logo.svg",
+      "maxHeight": 43
     }
   },
-  "rich-text#footer-mobile2": {
+
+  "flex-layout.row#footer-payments-desktop": {
+    "children": [
+      "flex-layout.col#footer-payments"
+    ]
+  },
+  "flex-layout.col#footer-payments": {
+    "children": [
+      "flex-layout.row#footer-payments-title",
+      "flex-layout.row#footer-payments-image"
+    ]
+  },
+  "flex-layout.row#footer-payments-title": {
+    "children": [
+      "rich-text#footer-payments-title"
+    ]
+  },
+  "rich-text#footer-payments-title": {
     "props": {
-      "text": "CASA FLORA LTDA - Inscrita sob o CNPJ 62.808.506/0001-89 - Rua Santa Rosa, 197/207 - São Paulo - SP - EP 03007-040",
-      "blockClass": "footer"
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Formas de Pagamento"
+    }
+  },
+  "flex-layout.row#footer-payments-image": {
+    "children": [
+      "image#footer-payments-image"
+    ]
+  },
+  "image#footer-payments-image": {
+    "props": {
+      "blockClass":"footer-powered-image",
+      "src": "assets/imgs/png/footer/payments.png",
+      "maxHeight": 49
     }
   }
 }
